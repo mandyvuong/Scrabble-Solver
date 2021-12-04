@@ -13,12 +13,12 @@ describe Scrabble do
     scrabble = Scrabble.new(nil)
     expect(scrabble.score).to eq 0
   end
-  it 'returns score 0 since the word argument is nil' do
-    scrabble = Scrabble.new(nil)
-    expect(scrabble.score).to eq 0
-  end
-  it 'returns score 1 since the word argument 1 letter uppercase' do
+  it 'returns score 1 since the word argument is 1 letter uppercase' do
     scrabble = Scrabble.new('A')
+    expect(scrabble.score).to eq 1
+  end
+  it 'returns score 1 since the word argument is 1 letter lowercase' do
+    scrabble = Scrabble.new('a')
     expect(scrabble.score).to eq 1
   end
 end

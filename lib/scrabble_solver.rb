@@ -1,6 +1,6 @@
 class Scrabble
   def initialize(word)
-    @word = word
+    @word = word.nil? ? word : word.upcase
   end
 
   def score
