@@ -9,4 +9,8 @@ describe Scrabble do
     scrabble = Scrabble.new(" \t\n")
     expect(scrabble.score).to eq 0
   end
+  it 'returns score 0 since the word argument is nil' do
+    scrabble = Scrabble.new(nil)
+    expect(scrabble.score).to eq 0
+  end
 end
