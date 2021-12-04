@@ -1,0 +1,1 @@
+require 'scrabble_solver'
