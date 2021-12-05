@@ -78,3 +78,7 @@ Method intialize, score, letter_value
 | 'street'                 | 6                     | return score for a word                         |
 | 'quirky'                 | 22                    | return score for a word                         |
 | 'OXYPHENBUTAZONE'        | 41                    | return score for a word                         |
+
+## Notes
+
+This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by completing TDD in Ruby from the Makers Academy process workshop challenges.
