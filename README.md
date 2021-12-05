@@ -81,4 +81,4 @@ Method intialize, score, letter_value
 
 ## Notes
 
-This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by completing TDD in Ruby from the Makers Academy process workshop challenges.
+This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by completing TDD in Ruby from the Makers Academy process workshop challenges. Lessons learned from this challenge is to spend more time planning.
