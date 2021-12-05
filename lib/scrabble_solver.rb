@@ -11,9 +11,7 @@ class Scrabble
 
   def score
     sum = 0
-     if @word.nil? 
-      sum = 0
-     else 
+     if !@word.nil? 
       points.each { |letter, value|
       sum += @word.upcase.scan(letter).count * value
       }
