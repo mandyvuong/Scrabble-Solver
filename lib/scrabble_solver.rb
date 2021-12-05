@@ -1,6 +1,18 @@
 class Scrabble
   def initialize(word)
     @word = word
+    @sum = 0
+  end
+
+  def score
+    score_calculation
+    @sum
+  end
+
+  private
+
+  def score_calculation
+    points if !@word.nil? 
   end
 
   def points
@@ -13,15 +25,9 @@ class Scrabble
       /[JX]/ => 8, 
       /[QZ]/ => 10
      } 
-  end
 
-  def score
-    sum = 0
-    if !@word.nil? 
-      points.each { |letter, value|
-      sum += @word.upcase.scan(letter).count * value
+      letter_value.each { |letter, value|
+      @sum += @word.upcase.scan(letter).count * value
       }
-     end
-    sum
   end
 end
