@@ -5,11 +5,7 @@ class Scrabble
 
   def points
     letter_value = { 
-      'A' => 1,
-      'S' => 1,
-      'T' => 1,
-      'R' => 1,
-      'E' => 1,
+      /[AERST]/ => 1,
       'F' => 4
      } 
   end
@@ -18,7 +14,7 @@ class Scrabble
     sum = 0
      if !@word.nil? 
       points.each { |letter, value|
-      sum += @word.upcase.count(letter) * value
+      sum += @word.upcase.scan(letter).count * value
       }
      end
     sum
