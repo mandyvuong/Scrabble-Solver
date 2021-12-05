@@ -7,8 +7,9 @@ class Scrabble
     sum = 0
      if @word.nil? 
       sum = 0
-     else 
-      @word.upcase.split('').each {|w| w == 'A' ? sum += 1 : sum+=0 }
+     else
+      a = 1 
+      sum = @word.downcase.count('a') * a
      end
     sum
   end
