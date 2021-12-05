@@ -5,8 +5,11 @@ class Scrabble
 
   def points
     letter_value = { 
-      /[AERST]/ => 1,
-      'F' => 4
+      /[AEIURST]/ => 1,
+      'F' => 4,
+      'Y' => 4,
+      'K' => 5,
+      'Q' => 10
      } 
   end
 
