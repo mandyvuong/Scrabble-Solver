@@ -3,16 +3,18 @@ class Scrabble
     @word = word
   end
 
-  def score
+  def points
     letter_value = { 
       'A' => 1
      } 
-    
+  end
+
+  def score
     sum = 0
      if @word.nil? 
       sum = 0
      else 
-      letter_value.each { |letter, value|
+      points.each { |letter, value|
       sum += @word.upcase.scan(letter).count * value
       }
      end
