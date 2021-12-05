@@ -5,7 +5,8 @@ class Scrabble
 
   def points
     letter_value = { 
-      'A' => 1
+      'A' => 1,
+      'F' => 4
      } 
   end
 

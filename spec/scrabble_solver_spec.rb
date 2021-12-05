@@ -25,5 +25,9 @@ describe Scrabble do
     scrabble = Scrabble.new('Aa')
     expect(scrabble.score).to eq 2
   end
+  it 'returns score 4 for word with a different letter argument' do
+    scrabble = Scrabble.new('f')
+    expect(scrabble.score).to eq 4
+  end
 end
 
