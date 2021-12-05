@@ -37,4 +37,10 @@ describe Scrabble do
     scrabble = Scrabble.new('quirky')
     expect(scrabble.score).to eq 22
   end
+  it 'returns score 41 for word OXYPHENBUTAZONE i.e. taking into account other letters' do
+    scrabble = Scrabble.new('OXYPHENBUTAZONE')
+    expect(scrabble.score).to eq 41
+  end
 end
+
+
