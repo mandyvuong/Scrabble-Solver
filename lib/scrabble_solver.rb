@@ -1,9 +1,15 @@
 class Scrabble
   def initialize(word)
-    @word = word.nil? ? word : word.upcase
+    @word = word
   end
 
   def score
-    @word == 'A' ? 1 : 0
+    sum = 0
+     if @word.nil? 
+      sum = 0
+     else 
+      @word.upcase.split('').each {|w| w == 'A' ? sum += 1 : sum+=0 }
+     end
+    sum
   end
 end

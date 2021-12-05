@@ -21,5 +21,9 @@ describe Scrabble do
     scrabble = Scrabble.new('a')
     expect(scrabble.score).to eq 1
   end
+  it 'returns score 2 for word with 2 of the same letter' do
+    scrabble = Scrabble.new('Aa')
+    expect(scrabble.score).to eq 2
+  end
 end
 
