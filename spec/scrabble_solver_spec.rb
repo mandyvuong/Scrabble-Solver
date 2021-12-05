@@ -29,5 +29,8 @@ describe Scrabble do
     scrabble = Scrabble.new('f')
     expect(scrabble.score).to eq 4
   end
+  it 'returns score 6 for word' do
+    scrabble = Scrabble.new('street')
+    expect(scrabble.score).to eq 6
+  end
 end
-
