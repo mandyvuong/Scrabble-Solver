@@ -61,24 +61,6 @@ scrabble = Scrabble.new('OXYPHENBUTAZONE')
 scrabble.score # => 41
 ```
 
-## Plan
-
-Class Scrabble
-Method intialize, score, letter_value
-
-| Input Scrabble.new(word) | Output scrabble.score | Description                                     |
-| ------------------------ | --------------------- | ----------------------------------------------- |
-| ''                       | 0                     | no score since it's argument is empty           |
-| " \t\n"                  | 0                     | no score since it's argument is format          |
-| nil                      | 0                     | no score since it's argument is nil             |
-| 'A'                      | 1                     | return score with one capital letter argument   |
-| 'a'                      | 1                     | return score with one lowercase letter argument |
-| 'aA'                     | 2                     | return score with more than one letter argument |
-| 'f'                      | 4                     | return score with different letter argument     |
-| 'street'                 | 6                     | return score for a word                         |
-| 'quirky'                 | 22                    | return score for a word                         |
-| 'OXYPHENBUTAZONE'        | 41                    | return score for a word                         |
-
 ## Notes
 
 This is post Makers Academy where I returned to full-time employment and have limited time to code. I've given myself small coding challenges by completing TDD in Ruby from the Makers Academy process workshop challenges. Lessons learned from this challenge is to spend more time planning.
